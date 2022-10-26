@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODAL POPUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--MODAL BTN-->
+        <div class="modal-open-btn" onclick="ModalFunc();">ACHETER</div>
+
+        <!--MODAL BOX-->
+        <div class="modal hide">
+            <img src="coche.png" alt="check">
+            <div class="modal-content">
+                <h1>SUCCES</h1>
+                <p>
+                    Produit ajouté au panier.
+                </p>
+                <span class="btn" onclick="ModalFunc();">oK</span>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function ModalFunc(){
+            document.querySelector('.modal').classList.toggle('hide');
+        }
+    </script>
+</body>
+</html>
